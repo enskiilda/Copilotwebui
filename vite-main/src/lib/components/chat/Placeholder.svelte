@@ -2,7 +2,7 @@
         import { marked } from 'marked';
 
         import { getContext, createEventDispatcher } from 'svelte';
-        import { blur, fade } from 'svelte/transition';
+        import { fade } from 'svelte/transition';
 
         const dispatch = createEventDispatcher();
 

@@ -2,7 +2,7 @@
         import Fuse from 'fuse.js';
         import { toast } from 'svelte-sonner';
         import { v4 as uuidv4 } from 'uuid';
-        import { PaneGroup, Pane, PaneResizer } from 'paneforge';
+        import { PaneGroup, Pane } from 'paneforge';
 
         import { onMount, getContext, onDestroy } from 'svelte';
         const i18n = getContext('i18n');
@@ -802,8 +802,7 @@
                                                                         <textarea
                                                                                 class="w-full h-full outline-none resize-none"
                                                                                 bind:value={selectedFileContent}
-                                                                                placeholder={$i18n.t('Add content here')}
-                                                                        />
+                                                                                placeholder={$i18n.t('Add content here')}></textarea>
                                                                 {/key}
                                                         </div>
                                                 </div>
@@ -865,8 +864,7 @@
                                                                         <textarea
                                                                                 class="w-full h-full outline-none resize-none"
                                                                                 bind:value={selectedFileContent}
-                                                                                placeholder={$i18n.t('Add content here')}
-                                                                        />
+                                                                                placeholder={$i18n.t('Add content here')}></textarea>
                                                                 {/key}
                                                         </div>
                                                 </div>

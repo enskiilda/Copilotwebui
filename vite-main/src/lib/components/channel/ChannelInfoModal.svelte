@@ -5,7 +5,6 @@
 	import Modal from '$lib/components/common/Modal.svelte';
 
 	import UserPlusSolid from '$lib/components/icons/UserPlusSolid.svelte';
-	import WrenchSolid from '$lib/components/icons/WrenchSolid.svelte';
 	import XMark from '$lib/components/icons/XMark.svelte';
 	import Hashtag from '../icons/Hashtag.svelte';
 	import Lock from '../icons/Lock.svelte';

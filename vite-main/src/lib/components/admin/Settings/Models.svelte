@@ -29,7 +29,6 @@
         import { toast } from 'svelte-sonner';
         import Cog6 from '$lib/components/icons/Cog6.svelte';
         import ConfigureModelsModal from './Models/ConfigureModelsModal.svelte';
-        import Wrench from '$lib/components/icons/Wrench.svelte';
         import Download from '$lib/components/icons/Download.svelte';
         import ManageModelsModal from './Models/ManageModelsModal.svelte';
         import ModelMenu from '$lib/components/admin/Settings/Models/ModelMenu.svelte';

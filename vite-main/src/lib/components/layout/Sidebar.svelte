@@ -517,7 +517,7 @@
                 goto('/');
                 newChatHandler();
         }}
-/>
+></button>
 
 {#if $showSidebar || (!$mobile && !$showSidebar)}
         <div

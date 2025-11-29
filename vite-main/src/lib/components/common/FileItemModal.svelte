@@ -231,8 +231,7 @@
                                                 <iframe
                                                         title={item?.name}
                                                         src={`${WEBUI_API_BASE_URL}/files/${item.id}/content`}
-                                                        class="w-full h-[70vh] border-0 rounded-lg"
-                                                />
+                                                        class="w-full h-[70vh] border-0 rounded-lg"></iframe>
                                         {:else}
                                                 <div class="max-h-96 overflow-scroll scrollbar-hidden text-xs whitespace-pre-wrap">
                                                         {(item?.file?.data?.content ?? '').trim() || 'No content'}
@@ -244,8 +243,7 @@
                                                         src={`${WEBUI_API_BASE_URL}/files/${item.id}/content`}
                                                         class="w-full border-0 rounded-lg mb-2"
                                                         controls
-                                                        playsinline
-                                                />
+                                                        playsinline></audio>
                                         {/if}
 
                                         {#if item?.file?.data}
