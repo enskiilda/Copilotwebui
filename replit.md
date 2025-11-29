@@ -91,7 +91,7 @@ cd vite-main && npm run dev
 
 ### Dependencies
 
-**Note**: This project requires `--legacy-peer-deps` flag due to peer dependency conflicts between TipTap editor packages. This is safe and doesn't affect functionality.
+**Note**: Dependencies are configured to work without special flags.
 
 ### Prerequisites
 - Node.js >= 18.13.0 (Node.js 20 is installed)
@@ -100,7 +100,7 @@ cd vite-main && npm run dev
 ## Deployment
 
 Configured for static deployment:
-- **Build Command**: `cd vite-main && npm install --legacy-peer-deps && npm run build`
+- **Build Command**: `cd vite-main && npm install && npm run build`
 - **Public Directory**: `vite-main/build`
 - **Deployment Type**: Static site
 
@@ -127,7 +127,7 @@ The application builds to static HTML/CSS/JS files that can be served from any s
 
 - Some packages have deprecation warnings (non-critical)
 - 4 npm vulnerabilities (2 low, 2 moderate) - review with `npm audit`
-- TipTap packages require `--legacy-peer-deps` flag
+
 
 ## User Preferences
 
