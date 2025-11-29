@@ -2,7 +2,6 @@
 	import { getContext } from 'svelte';
 	import { models, config, toolServers, tools } from '$lib/stores';
 
-	import { toast } from 'svelte-sonner';
 	import { deleteSharedChatById, getChatById, shareChatById } from '$lib/apis/chats';
 	import { copyToClipboard } from '$lib/utils';
 

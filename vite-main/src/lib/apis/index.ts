@@ -3,7 +3,6 @@ import { convertOpenApiToToolPayload } from '$lib/utils';
 import { getOpenAIModelsDirect } from './openai';
 
 import { parse } from 'yaml';
-import { toast } from 'svelte-sonner';
 
 export const getModels = async (
         token: string = '',

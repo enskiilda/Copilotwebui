@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { DropdownMenu } from 'bits-ui';
-	import { createEventDispatcher, getContext, onMount } from 'svelte';
+	import { getContext } from 'svelte';
 
 	import { showSettings, mobile, showSidebar, user } from '$lib/stores';
-	import { fade, slide } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
-	import PencilSquare from '../icons/PencilSquare.svelte';
 	import ChatBubbleOval from '../icons/ChatBubbleOval.svelte';
 	import Sparkles from '../icons/Sparkles.svelte';
 

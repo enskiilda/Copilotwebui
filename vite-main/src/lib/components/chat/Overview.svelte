@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getContext, createEventDispatcher, onDestroy } from 'svelte';
+	import { getContext, createEventDispatcher } from 'svelte';
 	import { useSvelteFlow, useNodesInitialized, useStore, SvelteFlowProvider } from '@xyflow/svelte';
 
 	const dispatch = createEventDispatcher();

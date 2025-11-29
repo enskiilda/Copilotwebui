@@ -1,7 +1,7 @@
 <script lang="ts">
         import { marked } from 'marked';
 
-        import { onMount, getContext, tick, createEventDispatcher } from 'svelte';
+        import { getContext, createEventDispatcher } from 'svelte';
         import { blur, fade } from 'svelte/transition';
 
         const dispatch = createEventDispatcher();
@@ -19,7 +19,6 @@
                 currentChatPage
         } from '$lib/stores';
         import { sanitizeResponseContent, extractCurlyBraceWords } from '$lib/utils';
-        import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
 
         import Suggestions from './Suggestions.svelte';
         import Tooltip from '$lib/components/common/Tooltip.svelte';

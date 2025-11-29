@@ -7,8 +7,6 @@
 	import Minus from '$lib/components/icons/Minus.svelte';
 	import XMark from '$lib/components/icons/XMark.svelte';
 	import Textarea from '$lib/components/common/Textarea.svelte';
-	import Switch from '$lib/components/common/Switch.svelte';
-	import Tooltip from '$lib/components/common/Tooltip.svelte';
 
 	export let show = false;
 	export let onSave = () => {};

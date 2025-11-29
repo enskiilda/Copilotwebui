@@ -10,7 +10,6 @@
         import Spinner from '$lib/components/common/Spinner.svelte';
         import { flyAndScale } from '$lib/utils/transitions';
         import { createEventDispatcher, onMount, getContext, tick } from 'svelte';
-        import { goto } from '$app/navigation';
 
         import { deleteModel, getOllamaVersion, pullModel, unloadModel } from '$lib/apis/ollama';
 
@@ -31,7 +30,6 @@
         import Check from '$lib/components/icons/Check.svelte';
         import Search from '$lib/components/icons/Search.svelte';
         import Tooltip from '$lib/components/common/Tooltip.svelte';
-        import Switch from '$lib/components/common/Switch.svelte';
         import ChatBubbleOval from '$lib/components/icons/ChatBubbleOval.svelte';
 
         import ModelItem from './ModelItem.svelte';

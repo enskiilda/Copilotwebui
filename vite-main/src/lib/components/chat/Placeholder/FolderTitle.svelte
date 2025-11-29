@@ -2,7 +2,6 @@
 	import { getContext } from 'svelte';
 	const i18n = getContext('i18n');
 
-	import DOMPurify from 'dompurify';
 
 	import fileSaver from 'file-saver';
 	const { saveAs } = fileSaver;
@@ -17,7 +16,6 @@
 	import FolderModal from '$lib/components/layout/Sidebar/Folders/FolderModal.svelte';
 
 	import Folder from '$lib/components/icons/Folder.svelte';
-	import XMark from '$lib/components/icons/XMark.svelte';
 	import FolderMenu from '$lib/components/layout/Sidebar/Folders/FolderMenu.svelte';
 	import EllipsisHorizontal from '$lib/components/icons/EllipsisHorizontal.svelte';
 	import DeleteConfirmDialog from '$lib/components/common/ConfirmDialog.svelte';

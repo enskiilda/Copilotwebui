@@ -3,7 +3,6 @@
 	import { Pane, PaneResizer } from 'paneforge';
 
 	import Drawer from '../common/Drawer.svelte';
-	import EllipsisVertical from '../icons/EllipsisVertical.svelte';
 
 	export let show = false;
 	export let pane = null;

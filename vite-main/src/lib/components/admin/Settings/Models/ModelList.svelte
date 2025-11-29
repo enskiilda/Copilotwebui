@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Sortable from 'sortablejs';
 
-	import { createEventDispatcher, getContext, onMount } from 'svelte';
+	import { getContext } from 'svelte';
 	const i18n = getContext('i18n');
 
 	import { models } from '$lib/stores';
