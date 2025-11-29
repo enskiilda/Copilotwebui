@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { DropdownMenu } from 'bits-ui';
-	import { getContext, onMount } from 'svelte';
+	import { getContext } from 'svelte';
 
 	import { flyAndScale } from '$lib/utils/transitions';
 	import { fade, slide } from 'svelte/transition';

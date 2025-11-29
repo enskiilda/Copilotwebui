@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Tooltip from '$lib/components/common/Tooltip.svelte';
-	import { tick, getContext, onMount, onDestroy } from 'svelte';
+	import { getContext, onMount, onDestroy } from 'svelte';
 	import { toast } from 'svelte-sonner';
 
 	const i18n = getContext('i18n');

@@ -1,5 +1,4 @@
 <script lang="ts">
-        import { toast } from 'svelte-sonner';
         import { marked } from 'marked';
 
         import { onMount, getContext, tick, createEventDispatcher } from 'svelte';

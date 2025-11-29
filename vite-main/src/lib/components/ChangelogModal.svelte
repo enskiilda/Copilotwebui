@@ -1,7 +1,7 @@
 <script lang="ts">
 	import DOMPurify from 'dompurify';
 
-	import { onMount, getContext } from 'svelte';
+	import { getContext } from 'svelte';
 	import { Confetti } from 'svelte-confetti';
 
 	import { WEBUI_NAME, config, settings } from '$lib/stores';

@@ -1,7 +1,7 @@
 <script lang="ts">
         import { marked } from 'marked';
 
-        import { getContext, tick } from 'svelte';
+        import { getContext } from 'svelte';
         import dayjs from '$lib/dayjs';
 
         import { mobile, settings, user } from '$lib/stores';

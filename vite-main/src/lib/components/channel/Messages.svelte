@@ -9,7 +9,7 @@
 	dayjs.extend(relativeTime);
 	dayjs.extend(isToday);
 	dayjs.extend(isYesterday);
-	import { tick, getContext, onMount, createEventDispatcher } from 'svelte';
+	import { tick, getContext, createEventDispatcher } from 'svelte';
 
 	import { settings, user } from '$lib/stores';
 

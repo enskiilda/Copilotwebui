@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onDestroy, onMount, tick } from 'svelte';
+	import { onDestroy, onMount} from 'svelte';
 	import { Pane, PaneResizer } from 'paneforge';
 
 	import Drawer from '../common/Drawer.svelte';
