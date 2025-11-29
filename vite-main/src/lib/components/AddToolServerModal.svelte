@@ -1,6 +1,4 @@
 <script lang="ts">
-        import { v4 as uuidv4 } from 'uuid';
-
         import fileSaver from 'file-saver';
         const { saveAs } = fileSaver;
 
@@ -10,13 +8,9 @@
 
         import { settings } from '$lib/stores';
         import Modal from '$lib/components/common/Modal.svelte';
-        import Plus from '$lib/components/icons/Plus.svelte';
-        import Minus from '$lib/components/icons/Minus.svelte';
-        import PencilSolid from '$lib/components/icons/PencilSolid.svelte';
         import SensitiveInput from '$lib/components/common/SensitiveInput.svelte';
         import Tooltip from '$lib/components/common/Tooltip.svelte';
         import Switch from '$lib/components/common/Switch.svelte';
-        import Tags from './common/Tags.svelte';
         import { getToolServerData } from '$lib/apis';
         import { verifyToolServerConnection, registerOAuthClient } from '$lib/apis/configs';
         import AccessControl from './workspace/common/AccessControl.svelte';
@@ -565,8 +559,7 @@
                                                                                                                 placeholder={$i18n.t('JSON Spec')}
                                                                                                                 autocomplete="off"
                                                                                                                 required
-                                                                                                                rows="5"
-                                                                                                        />
+                                                                                                                rows="5"></textarea>
                                                                                                 </div>
                                                                                         {/if}
                                                                                 </div>

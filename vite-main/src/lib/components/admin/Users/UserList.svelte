@@ -1,8 +1,7 @@
 <script>
-	import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
-	import { WEBUI_NAME, config, user, showSidebar } from '$lib/stores';
-	import { goto } from '$app/navigation';
-	import { onMount, getContext } from 'svelte';
+	import { WEBUI_API_BASE_URL } from '$lib/constants';
+	import { config, user, showSidebar } from '$lib/stores';
+	import { getContext } from 'svelte';
 
 	import dayjs from 'dayjs';
 	import relativeTime from 'dayjs/plugin/relativeTime';
@@ -338,7 +337,7 @@
 						</div>
 					</th>
 
-					<th scope="col" class="px-2.5 py-2 text-right" />
+					<th scope="col" class="px-2.5 py-2 text-right" ></th>
 				</tr>
 			</thead>
 			<tbody class="">

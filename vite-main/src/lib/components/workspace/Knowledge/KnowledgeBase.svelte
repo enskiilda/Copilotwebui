@@ -2,9 +2,9 @@
         import Fuse from 'fuse.js';
         import { toast } from 'svelte-sonner';
         import { v4 as uuidv4 } from 'uuid';
-        import { PaneGroup, Pane, PaneResizer } from 'paneforge';
+        import { PaneGroup, Pane } from 'paneforge';
 
-        import { onMount, getContext, onDestroy, tick } from 'svelte';
+        import { onMount, getContext, onDestroy } from 'svelte';
         const i18n = getContext('i18n');
 
         import { goto } from '$app/navigation';
@@ -44,7 +44,6 @@
 
         import SyncConfirmDialog from '../../common/ConfirmDialog.svelte';
         import RichTextInput from '$lib/components/common/RichTextInput.svelte';
-        import EllipsisVertical from '$lib/components/icons/EllipsisVertical.svelte';
         import Drawer from '$lib/components/common/Drawer.svelte';
         import ChevronLeft from '$lib/components/icons/ChevronLeft.svelte';
         import LockClosed from '$lib/components/icons/LockClosed.svelte';
@@ -803,8 +802,7 @@
                                                                         <textarea
                                                                                 class="w-full h-full outline-none resize-none"
                                                                                 bind:value={selectedFileContent}
-                                                                                placeholder={$i18n.t('Add content here')}
-                                                                        />
+                                                                                placeholder={$i18n.t('Add content here')}></textarea>
                                                                 {/key}
                                                         </div>
                                                 </div>
@@ -866,8 +864,7 @@
                                                                         <textarea
                                                                                 class="w-full h-full outline-none resize-none"
                                                                                 bind:value={selectedFileContent}
-                                                                                placeholder={$i18n.t('Add content here')}
-                                                                        />
+                                                                                placeholder={$i18n.t('Add content here')}></textarea>
                                                                 {/key}
                                                         </div>
                                                 </div>

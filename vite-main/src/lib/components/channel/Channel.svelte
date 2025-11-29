@@ -12,7 +12,6 @@
 	import MessageInput from './MessageInput.svelte';
 	import Navbar from './Navbar.svelte';
 	import Drawer from '../common/Drawer.svelte';
-	import EllipsisVertical from '../icons/EllipsisVertical.svelte';
 	import Thread from './Thread.svelte';
 	import i18n from '$lib/i18n';
 
@@ -304,8 +303,7 @@
 				id="controls-resizer"
 			>
 				<div
-					class=" absolute -left-1.5 -right-1.5 -top-0 -bottom-0 z-20 cursor-col-resize bg-transparent"
-				/>
+					class=" absolute -left-1.5 -right-1.5 -top-0 -bottom-0 z-20 cursor-col-resize bg-transparent"></div>
 			</PaneResizer>
 
 			<Pane defaultSize={50} minSize={30} class="h-full w-full">

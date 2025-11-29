@@ -1,5 +1,4 @@
 <script lang="ts">
-        import { toast } from 'svelte-sonner';
         import { onMount, getContext } from 'svelte';
         import { getCodeExecutionConfig, setCodeExecutionConfig } from '$lib/apis/configs';
 

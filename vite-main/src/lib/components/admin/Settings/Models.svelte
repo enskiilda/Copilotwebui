@@ -3,10 +3,10 @@
         import fileSaver from 'file-saver';
         const { saveAs } = fileSaver;
 
-        import { onMount, getContext, tick } from 'svelte';
+        import { onMount, getContext} from 'svelte';
         const i18n = getContext('i18n');
 
-        import { WEBUI_NAME, config, mobile, models as _models, settings, user } from '$lib/stores';
+        import { config, mobile, models as _models, settings, user } from '$lib/stores';
         import {
                 createNewModel,
                 deleteAllModels,
@@ -27,17 +27,15 @@
 
         import ModelEditor from '$lib/components/workspace/Models/ModelEditor.svelte';
         import { toast } from 'svelte-sonner';
-        import ConfirmDialog from '$lib/components/common/ConfirmDialog.svelte';
         import Cog6 from '$lib/components/icons/Cog6.svelte';
         import ConfigureModelsModal from './Models/ConfigureModelsModal.svelte';
-        import Wrench from '$lib/components/icons/Wrench.svelte';
         import Download from '$lib/components/icons/Download.svelte';
         import ManageModelsModal from './Models/ManageModelsModal.svelte';
         import ModelMenu from '$lib/components/admin/Settings/Models/ModelMenu.svelte';
         import EllipsisHorizontal from '$lib/components/icons/EllipsisHorizontal.svelte';
         import EyeSlash from '$lib/components/icons/EyeSlash.svelte';
         import Eye from '$lib/components/icons/Eye.svelte';
-        import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
+        import { WEBUI_API_BASE_URL } from '$lib/constants';
         import { goto } from '$app/navigation';
 
         let shiftKey = false;
@@ -353,7 +351,7 @@
                                                         <div class=" flex-1 self-center {(model?.is_active ?? true) ? '' : 'text-gray-500'}">
                                                                 <Tooltip
                                                                         content={marked.parse(
-                                                                                !!model?.meta?.description
+                                                                                model?.meta?.description
                                                                                         ? model?.meta?.description
                                                                                         : model?.ollama?.digest
                                                                                                 ? `${model?.ollama?.digest} **(${model?.ollama?.modified_at})**`
@@ -366,7 +364,7 @@
                                                                 </Tooltip>
                                                                 <div class=" text-xs overflow-hidden text-ellipsis line-clamp-1 text-gray-500">
                                                                         <span class=" line-clamp-1">
-                                                                                {!!model?.meta?.description
+                                                                                {model?.meta?.description
                                                                                         ? model?.meta?.description
                                                                                         : model?.ollama?.digest
                                                                                                 ? `${model.id} (${model?.ollama?.digest})`

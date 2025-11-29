@@ -19,7 +19,6 @@
 		toggleGlobalById
 	} from '$lib/apis/functions';
 
-	import Download from '../icons/Download.svelte';
 	import Tooltip from '../common/Tooltip.svelte';
 	import ConfirmDialog from '../common/ConfirmDialog.svelte';
 	import { getModels } from '$lib/apis';

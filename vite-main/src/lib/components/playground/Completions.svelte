@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { toast } from 'svelte-sonner';
 
 	import { goto } from '$app/navigation';
-	import { onMount, tick, getContext } from 'svelte';
+	import { onMount, getContext } from 'svelte';
 
 	import { WEBUI_BASE_URL } from '$lib/constants';
-	import { WEBUI_NAME, config, user, models, settings, showSidebar } from '$lib/stores';
+	import { config, user, models, settings, showSidebar } from '$lib/stores';
 	import { chatCompletion } from '$lib/apis/openai';
 
 	import { splitStream } from '$lib/utils';
@@ -149,8 +148,7 @@
 							bind:this={textCompletionAreaElement}
 							class="w-full h-full p-3 bg-transparent border border-gray-100 dark:border-gray-850 outline-hidden resize-none rounded-lg text-sm"
 							bind:value={text}
-							placeholder={$i18n.t("You're a helpful assistant.")}
-						/>
+							placeholder={$i18n.t("You're a helpful assistant.")}></textarea>
 					</div>
 				</div>
 			</div>

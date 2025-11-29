@@ -19,7 +19,6 @@
         import Textarea from '$lib/components/common/Textarea.svelte';
         import AccessControl from '../common/AccessControl.svelte';
         import Spinner from '$lib/components/common/Spinner.svelte';
-        import XMark from '$lib/components/icons/XMark.svelte';
         import DefaultFiltersSelector from './DefaultFiltersSelector.svelte';
         import DefaultFeatures from './DefaultFeatures.svelte';
         import PromptSuggestions from './PromptSuggestions.svelte';
@@ -761,8 +760,7 @@
                                                                         rows="10"
                                                                         value={JSON.stringify(info, null, 2)}
                                                                         disabled
-                                                                        readonly
-                                                                />
+                                                                        readonly></textarea>
                                                         </div>
                                                 {/if}
                                         </div>

@@ -1,9 +1,8 @@
-import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
+import { WEBUI_BASE_URL } from '$lib/constants';
 import { convertOpenApiToToolPayload } from '$lib/utils';
 import { getOpenAIModelsDirect } from './openai';
 
 import { parse } from 'yaml';
-import { toast } from 'svelte-sonner';
 
 export const getModels = async (
         token: string = '',

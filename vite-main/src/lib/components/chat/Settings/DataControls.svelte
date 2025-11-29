@@ -20,7 +20,7 @@
                 importChats
         } from '$lib/apis/chats';
         import { getImportOrigin, convertOpenAIChats } from '$lib/utils';
-        import { onMount, getContext } from 'svelte';
+        import { getContext } from 'svelte';
         import { goto } from '$app/navigation';
         import { toast } from 'svelte-sonner';
         import ArchivedChatsModal from '$lib/components/layout/ArchivedChatsModal.svelte';

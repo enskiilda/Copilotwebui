@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { DropdownMenu } from 'bits-ui';
-	import { createEventDispatcher, getContext, onMount } from 'svelte';
+	import { createEventDispatcher, getContext } from 'svelte';
 
 	import { showSettings, mobile, showSidebar, user } from '$lib/stores';
-	import { fade, slide } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	import Mic from '../icons/Mic.svelte';
 	import CursorArrowRays from '../icons/CursorArrowRays.svelte';

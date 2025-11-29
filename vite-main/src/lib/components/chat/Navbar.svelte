@@ -1,6 +1,5 @@
 <script lang="ts">
         import { getContext } from 'svelte';
-        import { toast } from 'svelte-sonner';
 
         import {
                 WEBUI_NAME,
@@ -16,7 +15,7 @@
                 user
         } from '$lib/stores';
 
-        import { slide } from 'svelte/transition';
+        import { } from 'svelte/transition';
         import { page } from '$app/stores';
         import { goto } from '$app/navigation';
 
@@ -27,7 +26,6 @@
         import UserMenu from '$lib/components/layout/Sidebar/UserMenu.svelte';
         import AdjustmentsHorizontal from '../icons/AdjustmentsHorizontal.svelte';
 
-        import PencilSquare from '../icons/PencilSquare.svelte';
         import Banner from '../common/Banner.svelte';
         import Sidebar from '../icons/Sidebar.svelte';
 
@@ -39,7 +37,6 @@
         import ChatCheck from '../icons/ChatCheck.svelte';
         import Knobs from '../icons/Knobs.svelte';
         import UserGroup from '../icons/UserGroup.svelte';
-        import { WEBUI_API_BASE_URL } from '$lib/constants';
 
         const i18n = getContext('i18n');
 
@@ -71,7 +68,7 @@
                 initNewChat();
         }}
         aria-label="New Chat"
-/>
+></button>
 
 <nav
         class="sticky top-0 z-30 w-full {chat?.id
@@ -118,7 +115,7 @@
                                 </div>
 
                                 <div class="self-start flex flex-none items-center text-gray-600 dark:text-gray-400">
-                                        <!-- <div class="md:hidden flex self-center w-[1px] h-5 mx-2 bg-gray-300 dark:bg-stone-700" /> -->
+                                        <!-- <div class="md:hidden flex self-center w-[1px] h-5 mx-2 bg-gray-300 dark:bg-stone-700" ></div> -->
 
                                         {#if $user?.role === 'user' ? ($user?.permissions?.chat?.temporary ?? true) && !($user?.permissions?.chat?.temporary_enforced ?? false) : true}
                                                 {#if !chat?.id}

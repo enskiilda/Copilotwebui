@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getContext, createEventDispatcher, onMount } from 'svelte';
+	import { getContext } from 'svelte';
 	import { createNewChannel, deleteChannelById } from '$lib/apis/channels';
 
 	import Spinner from '$lib/components/common/Spinner.svelte';

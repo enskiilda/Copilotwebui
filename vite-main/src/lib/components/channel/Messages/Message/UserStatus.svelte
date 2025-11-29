@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { getContext, onMount } from 'svelte';
+	import { getContext } from 'svelte';
 
 	const i18n = getContext('i18n');
-	import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
+	import { WEBUI_API_BASE_URL } from '$lib/constants';
 
 	export let user = null;
 </script>
@@ -27,9 +27,8 @@
 					<div>
 						<span class="relative flex size-2">
 							<span
-								class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
-							/>
-							<span class="relative inline-flex rounded-full size-2 bg-green-500" />
+								class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+							<span class="relative inline-flex rounded-full size-2 bg-green-500"></span>
 						</span>
 					</div>
 
@@ -37,7 +36,7 @@
 				{:else}
 					<div>
 						<span class="relative flex size-2">
-							<span class="relative inline-flex rounded-full size-2 bg-gray-500" />
+							<span class="relative inline-flex rounded-full size-2 bg-gray-500"></span>
 						</span>
 					</div>
 

@@ -36,14 +36,12 @@
                 removeDetails,
                 removeAllDetails
         } from '$lib/utils';
-        import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
 
         import Name from './Name.svelte';
         import Skeleton from './Skeleton.svelte';
         import Image from '$lib/components/common/Image.svelte';
         import Tooltip from '$lib/components/common/Tooltip.svelte';
         import RateComment from './RateComment.svelte';
-        import Spinner from '$lib/components/common/Spinner.svelte';
         import WebSearchResults from './ResponseMessage/WebSearchResults.svelte';
         import Sparkles from '$lib/components/icons/Sparkles.svelte';
 
@@ -717,7 +715,7 @@
                                                                                         document.getElementById('confirm-edit-message-button')?.click();
                                                                                 }
                                                                         }}
-                                                                />
+                                                                ></textarea>
 
                                                                 <div class=" mt-2 mb-1 flex justify-between text-sm font-medium">
                                                                         <div>

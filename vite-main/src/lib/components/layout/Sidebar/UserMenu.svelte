@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { DropdownMenu } from 'bits-ui';
-	import { createEventDispatcher, getContext, onMount, tick } from 'svelte';
+	import { createEventDispatcher, getContext, tick } from 'svelte';
 
 	import { flyAndScale } from '$lib/utils/transitions';
-	import { goto } from '$app/navigation';
-	import { fade, slide } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	import { getUsage } from '$lib/apis';
 	import { userSignOut } from '$lib/apis/auths';
@@ -237,9 +236,8 @@
 							<div class=" flex items-center">
 								<span class="relative flex size-2">
 									<span
-										class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
-									/>
-									<span class="relative inline-flex rounded-full size-2 bg-green-500" />
+										class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+									<span class="relative inline-flex rounded-full size-2 bg-green-500"></span>
 								</span>
 							</div>
 

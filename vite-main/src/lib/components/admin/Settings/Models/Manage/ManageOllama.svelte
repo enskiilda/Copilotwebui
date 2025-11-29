@@ -1,9 +1,9 @@
 <script lang="ts">
         import { toast } from 'svelte-sonner';
-        import { getContext, onMount } from 'svelte';
+        import { getContext } from 'svelte';
         const i18n = getContext('i18n');
 
-        import { WEBUI_NAME, models, MODEL_DOWNLOAD_POOL, user, config, settings } from '$lib/stores';
+        import { models, MODEL_DOWNLOAD_POOL, user, config, settings } from '$lib/stores';
         import { splitStream } from '$lib/utils';
 
         import {
@@ -854,8 +854,7 @@
                                                                 class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-100 dark:bg-gray-850 outline-hidden resize-none scrollbar-hidden"
                                                                 rows="6"
                                                                 placeholder={`e.g. {"model": "my-modelfile", "from": "ollama:7b"})`}
-                                                                disabled={createModelLoading}
-                                                        />
+                                                                disabled={createModelLoading}></textarea>
                                                 </div>
 
                                                 <div class="flex self-start">
@@ -1064,8 +1063,7 @@
                                                                         <textarea
                                                                                 bind:value={modelFileContent}
                                                                                 class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-100 dark:bg-gray-850 outline-hidden resize-none"
-                                                                                rows="6"
-                                                                        />
+                                                                                rows="6"></textarea>
                                                                 </div>
                                                         </div>
                                                 {/if}

@@ -7,7 +7,7 @@
 	import relativeTime from 'dayjs/plugin/relativeTime';
 	dayjs.extend(relativeTime);
 
-	import { onMount, getContext } from 'svelte';
+	import { getContext } from 'svelte';
 	const i18n = getContext('i18n');
 
 	import { deleteFeedbackById, exportAllFeedbacks, getFeedbackItems } from '$lib/apis/evaluations';
@@ -23,7 +23,7 @@
 
 	import ChevronUp from '$lib/components/icons/ChevronUp.svelte';
 	import ChevronDown from '$lib/components/icons/ChevronDown.svelte';
-	import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
+	import { WEBUI_API_BASE_URL } from '$lib/constants';
 	import { config } from '$lib/stores';
 	import Spinner from '$lib/components/common/Spinner.svelte';
 

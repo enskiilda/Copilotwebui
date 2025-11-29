@@ -79,8 +79,7 @@
                                                         class="px-3 py-1.5 text-xs w-full bg-transparent outline-hidden resize-none"
                                                         placeholder={$i18n.t('Prompt (e.g. Tell me a fun fact about the Roman Empire)')}
                                                         rows="4"
-                                                        bind:value={prompt.content}
-                                                />
+                                                        bind:value={prompt.content}></textarea>
                                         </div>
 
                                         <div class="">

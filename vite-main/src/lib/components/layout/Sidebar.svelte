@@ -41,7 +41,6 @@
                 importChats
         } from '$lib/apis/chats';
         import { createNewFolder, getFolders, updateFolderParentIdById } from '$lib/apis/folders';
-        import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
 
         import ArchivedChatsModal from './ArchivedChatsModal.svelte';
         import UserMenu from './Sidebar/UserMenu.svelte';
@@ -62,7 +61,7 @@
         import Sidebar from '../icons/Sidebar.svelte';
         import PinnedModelList from './Sidebar/PinnedModelList.svelte';
         import Note from '../icons/Note.svelte';
-        import { slide } from 'svelte/transition';
+        import { } from 'svelte/transition';
         import HotkeyHint from '../common/HotkeyHint.svelte';
         import Avatar from '../common/Avatar.svelte';
 
@@ -518,7 +517,7 @@
                 goto('/');
                 newChatHandler();
         }}
-/>
+></button>
 
 {#if $showSidebar || (!$mobile && !$showSidebar)}
         <div

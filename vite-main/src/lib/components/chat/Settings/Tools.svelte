@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { toast } from 'svelte-sonner';
-	import { createEventDispatcher, onMount, getContext, tick } from 'svelte';
+	import { createEventDispatcher, onMount, getContext} from 'svelte';
 	import { getModels as _getModels, getToolServersData } from '$lib/apis';
 
 	const dispatch = createEventDispatcher();
@@ -8,7 +8,6 @@
 
 	import { models, settings, toolServers, user } from '$lib/stores';
 
-	import Switch from '$lib/components/common/Switch.svelte';
 	import Spinner from '$lib/components/common/Spinner.svelte';
 	import Tooltip from '$lib/components/common/Tooltip.svelte';
 	import Plus from '$lib/components/icons/Plus.svelte';

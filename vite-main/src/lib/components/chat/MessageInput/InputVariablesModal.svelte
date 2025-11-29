@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { getContext, onMount, tick } from 'svelte';
+	import { getContext, tick } from 'svelte';
 	import { models, config } from '$lib/stores';
 
-	import { toast } from 'svelte-sonner';
 	import { copyToClipboard } from '$lib/utils';
 
 	import XMark from '$lib/components/icons/XMark.svelte';
@@ -321,8 +320,7 @@
 														bind:value={variableValues[variable]}
 														autocomplete="off"
 														id="input-variable-{idx}"
-														required={variables[variable]?.required ?? false}
-													/>
+														required={variables[variable]?.required ?? false}></textarea>
 												{/if}
 											</div>
 										</div>

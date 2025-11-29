@@ -11,16 +11,14 @@
         import { getBackendConfig } from '$lib/apis';
         import { ldapUserSignIn, getSessionUser, userSignIn, userSignUp } from '$lib/apis/auths';
 
-        import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
+        import { WEBUI_BASE_URL } from '$lib/constants';
         import { WEBUI_NAME, config, user, socket } from '$lib/stores';
 
-        import { generateInitialsImage, canvasPixelTest } from '$lib/utils';
+        import { generateInitialsImage } from '$lib/utils';
 
         import Spinner from '$lib/components/common/Spinner.svelte';
         import OnBoarding from '$lib/components/OnBoarding.svelte';
         import SensitiveInput from '$lib/components/common/SensitiveInput.svelte';
-        import { redirect } from '@sveltejs/kit';
-
         const i18n = getContext('i18n');
 
         let loaded = false;
@@ -198,7 +196,7 @@
 <div class="w-full h-screen max-h-[100dvh] text-white relative" id="auth-page">
         <div class="w-full h-full absolute top-0 left-0 bg-white dark:bg-black"></div>
 
-        <div class="w-full absolute top-0 left-0 right-0 h-8 drag-region" />
+        <div class="w-full absolute top-0 left-0 right-0 h-8 drag-region"></div>
 
         {#if loaded}
                 <div
